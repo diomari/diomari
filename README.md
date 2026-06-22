@@ -61,28 +61,6 @@ product has to keep working exactly when the network disappears.
 
 ---
 
-### Questline
-
-**Daily-quest learning app for AI Engineering.**
-
-Questline turns an AI Engineering roadmap into adaptive, bite-sized study quests.
-It uses scheduled quests, XP, streaks, AI-assisted framing, and durable learning
-workflows to make long-term technical learning feel more like a progression
-system than a static checklist.
-
-- **Role:** Sole engineer, from product architecture through implementation.
-- **Stack:** React, Vite, TypeScript, Cloudflare Workers, Hono, D1, Drizzle, Workers AI, AI Gateway, Durable Workflows.
-- **Frontend:** React 19, Vite, Tailwind v4, TanStack Query, React Router, onboarding, Today view, roadmap map, profile/history, theme handling, and knowledge checks.
-- **API:** Hono routes for tracks, enrollment, current user, daily quests, completions, plans, re-pacing, quizzes, profile, and metrics.
-- **Data:** D1 + Drizzle for tracks, nodes, prerequisites, resources, enrollments, quests, quest slices, tasks, XP ledger, streaks, and auth tables.
-- **Architecture:** Domain logic for scheduling, topological sorting, dates, streaks, progression, and framing is kept separate from Workers-specific code.
-- **AI layer:** Workers AI routed through AI Gateway when available, with deterministic fallbacks so the product loop still works locally.
-
-**Key idea:** AI should frame and adapt the learning experience, but the roadmap,
-prerequisites, schedule, and product loop need deterministic structure.
-
----
-
 ### Gorgi
 
 **A one-line-to-embed grounded AI chat widget for websites.**
@@ -126,27 +104,6 @@ before editing a repository.
 **Key idea:** Agent tooling does not always need more intelligence. Sometimes the
 best feature is a small, factual, safe handoff before the first prompt.
 
----
-
-### Edge Form
-
-**Self-hostable form backend for static sites.**
-
-Edge Form gives static websites a production-ready contact form backend without
-running a traditional server. Submissions are validated at the edge, stored in
-D1, protected from basic abuse, optionally forwarded to email or webhooks, and
-exportable from protected admin routes.
-
-- **Repo:** [github.com/diomari/edge-form-inbox](https://github.com/diomari/edge-form-inbox)
-- **Stack:** Cloudflare Workers, D1, TypeScript, Wrangler, Resend API, signed webhooks.
-- **Scope:** Public form endpoint, CORS, validation, spam checks, D1 inbox, delivery event logging, admin list/detail routes, and CSV export.
-- **Input support:** JSON, URL-encoded bodies, and multipart form data.
-- **Persistence:** Stores accepted submissions before delivery so notification failure does not lose user messages.
-- **Privacy:** Uses practical defaults such as hashed IP rate limiting.
-- **Operations:** Email/webhook delivery failures are visible without making the submission disappear.
-
-**Key idea:** Static sites still need reliable backend workflows. A small edge
-service can cover the real operational needs without becoming a full app server.
 
 ## Tools and technologies I use often
 
@@ -218,11 +175,4 @@ My portfolio is also a project I maintain carefully.
 - **Priorities:** Performance, lean bundle size, polished interaction, and durable content structure.
 - **Extra:** Local/free article narration pipeline using Piper/Kokoro experiments and publish tooling.
 
-## Selected links
 
-- Portfolio: [https://diom.dev](https://diom.dev)
-- Projects: [https://diom.dev/projects](https://diom.dev/projects)
-- Writing: [https://diom.dev/blog](https://diom.dev/blog)
-- GitHub: [https://github.com/diomari](https://github.com/diomari)
-- LinkedIn: [https://linkedin.com/in/diomari](https://linkedin.com/in/diomari)
-- Email: [hello@diom.dev](mailto:hello@diom.dev)
