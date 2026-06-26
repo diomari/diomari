@@ -1,7 +1,7 @@
 # Hi, I'm Diomari 👋
 
-I'm a product-minded full-stack engineer building AI-enabled products,
-serverless systems, developer tools, and fast frontend experiences.
+I'm a full-stack engineer building AI-enabled products,
+serverless systems, developer tools, and frontend experiences.
 
 I like working at the intersection of product, architecture, and implementation:
 turning ambiguous ideas into scoped systems, shipping the smallest useful loop,
@@ -19,7 +19,7 @@ I focus on practical software that connects product value with strong technical
 foundations:
 
 - **AI product systems** — grounded assistants, AI agent workflows, human-in-the-loop approvals, retrieval, evaluation, cost controls, and safe automation.
-- **Cloudflare-native apps** — Workers, Hono, D1, R2, Queues, Durable Objects, Workflows, Workers AI, AI Gateway, and serverless deployment patterns.
+- **Edge-native backend** — Workers, Hono, D1, R2, Queues, Durable Objects, Workflows, Workers AI, AI Gateway, and serverless deployment patterns.
 - **Developer tools** — CLIs, coding-agent packages, project scanners, workflow helpers, and tools that improve engineering feedback loops.
 - **Frontend products** — React, Astro, React Native, Expo, polished UI, performance-minded animation, accessibility, and maintainable component systems.
 - **Product engineering** — scoping, architecture, requirements clarification, milestone planning, async communication, documentation, and code review.
@@ -82,97 +82,22 @@ with cost controls and tenant isolation.
 strict tenant boundaries, clear quotas, and predictable integration.
 
 
----
-
-### Brief Context
-
-**A lightweight handoff tool for AI coding agents.**
-
-Brief Context solves cold-start AI coding sessions by generating a compact
-`PROJECT_CONTEXT.md` that Pi, Claude Code, Codex, and terminal workflows can read
-before editing a repository.
-
-- **Repo:** [github.com/diomari/brief-ctx](https://github.com/diomari/brief-ctx)
-- **Type:** Developer tool / coding-agent package.
-- **Stack:** TypeScript, Node.js, pnpm, Node test runner, Pi extension API.
-- **Scope:** CLI, Pi extension, prompt templates, Claude Code and Codex adapters, scanner heuristics, cache writing, tests, and package metadata.
-- **Core design:** Host-agnostic TypeScript core handles detection, rendering, output path safety, cache writing, and orchestration.
-- **Output:** Writes `PROJECT_CONTEXT.md` and `.pi/brief.json` for stable detection data and change hints.
-- **Safety:** Avoids real environment files, ignores noisy/generated directories, caps reads and walks, rejects unsafe output paths, and reports unknowns instead of inventing architecture.
-- **Validation:** Typecheck, tests, and `npm pack --dry-run` in CI.
-
-**Key idea:** Agent tooling does not always need more intelligence. Sometimes the
-best feature is a small, factual, safe handoff before the first prompt.
-
-
-## Tools and technologies I use often
-
-### Languages and runtimes
+## Top Tech Stack
 
 - TypeScript
 - JavaScript
+- Python
+- NumPy/Pandas
 - Node.js
 - React
-- React Native
+- React Native/Expo
+- HonoJS
+- NextJS
 - Astro
-
-### Frontend
-
-- React
-- Vite
-- Astro Content Collections
-- Tailwind CSS
-- Vanilla CSS design tokens
+- HTML5/CSS3
 - GSAP
-- ScrollTrigger
-- Lenis
-- MapLibre
-- Expo
-
-### Backend and serverless
-
-- Cloudflare Workers
-- Hono
-- D1
-- R2
-- Queues
-- Durable Objects
-- Durable Workflows
-- Workers AI
+- Cloudflare
+- AWS
+- PostgreSQL
+- SQLite
 - AI Gateway
-- Wrangler
-
-### Data, validation, and product infrastructure
-
-- Drizzle
-- Zod
-- TanStack Query
-- Auth/product flow design
-- Usage metering and quota checks
-- Tenant isolation
-- Approval workflows
-- Audit trails
-- CSV export and admin tooling
-
-### Developer tooling
-
-- CLI design
-- npm package publishing
-- GitHub Actions
-- Typecheck/test/package validation
-- AI coding agent workflows
-- Project scanning and generated context
-- Documentation and decision records
-
-
-## My portfolio site
-
-My portfolio is also a project I maintain carefully.
-
-- **Site:** [diom.dev](https://diom.dev)
-- **Stack:** Astro 6, TypeScript, Astro View Transitions, GSAP, ScrollTrigger, Lenis, vanilla CSS, Content Collections, Shiki, Web3Forms, Cloudflare Pages.
-- **Content:** Markdown-powered projects and blog posts.
-- **Priorities:** Performance, lean bundle size, polished interaction, and durable content structure.
-- **Extra:** Local/free article narration pipeline using Piper/Kokoro experiments and publish tooling.
-
-
